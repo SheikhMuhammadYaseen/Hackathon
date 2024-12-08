@@ -17,22 +17,17 @@ export default function SingleProductPage() {
   };
 
   return (
-    <div className="bg-white min-h-screen">
-      {/* Breadcrumb */}
-      <div className="py-4 px-32">
-        <p className="text-sm text-gray-500 mt-2 flex items-left justify-left space-x-2">
-          <span>Home</span>
-          <FontAwesomeIcon
-            icon={faAngleRight}
-            className="text-gray-900 h-3 w-3 text-xs"
-          />
-          <span>Shop</span>
-          <FontAwesomeIcon
-            icon={faAngleRight}
-            className="text-gray-900 h-3 w-3 text-xs"
-          />
-          <span>Asgaard Sofa</span>
-        </p>
+        <div className="bg-white min-h-screen">
+          {/* Breadcrumb */}
+          <div className="py-4 px-32">
+      <p className="text-sm text-gray-500 mt-2 flex items-left justify-left space-x-2">
+        <span>Home</span>
+        <span className="font-extrabold text-black">&gt;</span>
+        <span>Shop</span>
+        <span className="font-extrabold text-black">&gt;</span>
+        <span className="font-extrabold text-black">|</span>
+        <span>Asgaard Sofa</span>
+      </p>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-12">
