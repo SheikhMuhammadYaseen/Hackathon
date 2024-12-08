@@ -1,14 +1,1 @@
-quarter 2 UI-Ux Hackathon
-
-__Tech Stack__
-1: Next.js
-2: Tailwind CSS
-3: ShadCn UI
-4: Lucide for icons
-5: Typescript
-
-
-
-
-
-Live Demo - https://ui-ux-hackathon-five.vercel.app/
+This hackathon, focused on eCommerce website UI/UX design, invites participants to tackle the challenge of creating a responsive and pixel-perfect design. The aim is to ensure a smooth and seamless user experience across all devices, from desktops to mobile phones. Participants will work to design an interface that is not only visually appealing but also highly intuitive, making it easy for users to navigate through the website. The design should include a smooth and straightforward checkout process while maintaining optimal functionality, ensuring that all aspects of the website work efficiently to enhance the overall user experience.

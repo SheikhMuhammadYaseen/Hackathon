@@ -21,7 +21,7 @@ export default function NewArrivalSection() {
             <div className="flex flex-col items-center lg:items-start">
               <p className="text-xl text-gray-500">New Arrival</p>
               <h2 className="text-5xl font-semibold text-gray-800 mt-2">Asgaard Sofa</h2>
-              <Link href="/Shop">
+              <Link href="/SingleProductPage">
                 <button className="mt-6 py-2 px-10 border-2 border-black text-black bg-transparent hover:bg-black hover:text-white transition duration-300">
                   Shop Now
                 </button>
