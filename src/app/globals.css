@@ -12,7 +12,6 @@ body {
     text-wrap: balance;
   }
 
-  /* Fix for the border-border class */
   .border-border {
     border-color: var(--border);
   }

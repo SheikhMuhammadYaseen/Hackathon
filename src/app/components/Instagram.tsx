@@ -1,4 +1,3 @@
-
 export default function InstagramSection() {
     return (
       <section className="bg-white py-20 relative">
@@ -24,4 +23,3 @@ export default function InstagramSection() {
       </section>
     );
   }
-  

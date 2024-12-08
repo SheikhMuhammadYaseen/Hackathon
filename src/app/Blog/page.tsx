@@ -150,16 +150,16 @@ export default function Blog() {
           </main>
 
           <aside className="lg:w-[25%] space-y-8">
-            <div className="flex justify-start mb-4">
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  className="pl-4 pr-10 py-2 rounded-md border border-black"
-                />
-                <Search className="absolute right-3 top-2.5 text-gray-900 w-5 h-5" />
-              </div>
-            </div>
+          <div className="flex justify-start mb-4 pl-4">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="pl-4 pr-10 py-2 rounded-md border border-black"
+            />
+            <Search className="absolute right-3 top-2.5 text-gray-900 w-5 h-5" />
+          </div>
+        </div>
 
             <div className="bg-white p-6">
               <h3 className="font-bold text-lg mb-4">Categories</h3>

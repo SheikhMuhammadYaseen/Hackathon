@@ -77,89 +77,85 @@ export default function ShopPage() {
         </div>
       </div>
 
-
-
-
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4 border-b border-gray-200">
-          <div className="flex items-center space-x-4">
-            <button className="flex items-center text-gray-700 hover:text-gray-900">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 mr-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-              <span>Filter</span>
-            </button>
-            <div className="flex space-x-2 items-center">
-              <button className="p-2 text-black hover:bg-gray-100">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 10h14M5 14h14M9 6h6M9 18h6"
-                  />
-                </svg>
-              </button>
-              <button className="p-2 text-black hover:bg-gray-100">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 4h5v5H4V4zm0 11h5v5H4v-5zm11-11h5v5h-5V4zm0 11h5v5h-5v-5z"
-                  />
-                </svg>
-              </button>
-              <span className="text-sm pl-7 text-gray-900">
-                Showing 1–16 of 32 results
-              </span>
-            </div>
-          </div>
-
-          <div className="flex items-center text-black space-x-4">
-            <div className="flex items-center space-x-2">
-              <label className="text-sm text-gray-700">Show</label>
-              <select className="block w-full h-8 border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                <option>16</option>
-                <option>32</option>
-                <option>48</option>
-              </select>
-            </div>
-            <div className="flex items-center text-black space-x-2">
-              <label className="text-sm text-gray-700">Sort</label>
-              <select className="block w-full h-8 border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm">
-                <option>Default</option>
-                <option>Price: Low to High</option>
-                <option>Price: High to Low</option>
-              </select>
-            </div>
-          </div>
+      <div className="flex flex-col sm:flex-row justify-between items-center py-4 border-b border-gray-200 space-y-4 sm:space-y-0 sm:px-8">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+        <button
+          className="flex items-center justify-center sm:justify-start text-gray-700 hover:text-gray-900 px-4 py-2 bg-gray-100 sm:bg-transparent rounded-md sm:rounded-none shadow sm:shadow-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 mr-1"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h8m-8 6h16"
+            />
+          </svg>
+          <span>Filter</span>
+        </button>
+        <div className="flex space-x-2 items-center justify-center sm:justify-start">
+          <button className="p-2 text-black hover:bg-gray-100">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 10h14M5 14h14M9 6h6M9 18h6"
+              />
+            </svg>
+          </button>
+          <button className="p-2 text-black hover:bg-gray-100">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 4h5v5H4V4zm0 11h5v5H4v-5zm11-11h5v5h-5V4zm0 11h5v5h-5v-5z"
+              />
+            </svg>
+          </button>
+          <span className="text-sm text-gray-900">
+            Showing 1–16 of 32 results
+          </span>
         </div>
       </div>
+
+      <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-end text-black space-y-4 sm:space-y-0 sm:space-x-4">
+        <div className="flex items-center justify-center space-x-2">
+          <label className="text-sm text-gray-700">Show</label>
+          <select className="block w-full h-8 border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm rounded-md">
+            <option>16</option>
+            <option>32</option>
+            <option>48</option>
+          </select>
+        </div>
+        <div className="flex items-center justify-center space-x-2">
+          <label className="text-sm text-gray-700">Sort</label>
+          <select className="block w-full h-8 border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm rounded-md">
+            <option>Default</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+          </select>
+        </div>
+      </div>
+    </div>
 
       {/* Products Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">

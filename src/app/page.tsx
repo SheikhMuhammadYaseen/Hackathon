@@ -1,4 +1,3 @@
-
 import HeroSection from "./components/Hero";
 import Hero2 from "./components/Hero2";
 import TopPicksSection from "./components/TopPicksSection";
@@ -9,7 +8,7 @@ import InstagramSection from "./components/Instagram";
 
 export default function Home() {
   return (
-   <div>
+    <div>
 
 <HeroSection />
 <Hero2 />
@@ -18,7 +17,6 @@ export default function Home() {
 <BlogSection />
 <InstagramSection />
 
-
-   </div>
+    </div>
   );
 }

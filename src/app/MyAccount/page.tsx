@@ -49,19 +49,6 @@ export default function MyAccount() {
         </div>
       </div>
 
-      
-
-
-
-
-
-
-
-
-
-
-
-
       <main className="min-h-screen w-full bg-[#ffffff] text-black flex flex-col md:flex-row">
   {/* Login Column */}
   <div className="w-full md:w-1/2 max-w-lg mx-auto p-8 md:p-16">
@@ -150,23 +137,6 @@ export default function MyAccount() {
   </div>
 </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div className="bg-[#FAF4F4] py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
@@ -196,23 +166,6 @@ export default function MyAccount() {
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
-
-
-
   );
 }

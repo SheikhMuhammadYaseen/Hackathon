@@ -392,7 +392,7 @@ export default function SingleProductPage() {
           <div className="mt-auto flex gap-2 px-4 py-4 ">
             <button className="w-1/2 py-1 border border-black bg-transparent text-black font-medium rounded-full ">
             <a href="/Cart">  View Cart</a>
-             
+            
             </button>
             <button className="w-1/2 py-1 border border-black  bg-transparent text-black font-medium rounded-full">
             <a href="/Checkout"> Checkout</a>

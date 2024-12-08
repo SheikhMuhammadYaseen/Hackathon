@@ -50,33 +50,6 @@ export default function Checkout() {
         </div>
       </div>
 
-      
-
-
-
-
-
-
-
-
-
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
-
-      
-
     <div className="max-w-7xl text-black bg-[#ffffff] mx-auto px-4 py-8 md:px-6 lg:px-8">
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Left Column - Billing Details Form */}
@@ -256,35 +229,6 @@ export default function Checkout() {
         </div>
       </div>
     </div>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <div className="bg-[#FAF4F4] py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -315,23 +259,6 @@ export default function Checkout() {
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
     </div>
-
-
-
-
-
-
-
-
   );
 }

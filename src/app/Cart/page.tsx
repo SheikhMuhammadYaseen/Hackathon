@@ -129,9 +129,9 @@ export default function ShopPage() {
                       Rs. 250,000.00
                     </span>
                   </div>
-<Link href={"/Checkout"}>
+                  <Link href={"/Checkout"}>
                   <button
-                    className="w-full rounded-full border border-black py-3 text-black transition hover:bg-gray-800 hover:text-white"
+                    className="w-full rounded-full border border-black py-3 text-black transition hover:bg-gray-800 hover:text-white mt-6"
                     aria-label="Proceed to checkout"
                   >
                     Check Out

@@ -1,4 +1,3 @@
-
 import Image from 'next/image'
 
 export default function Hero2() {
@@ -15,12 +14,12 @@ export default function Hero2() {
             alt="Side Table"
             width={400}
             height={400}
-            className="w-auto h-80"
+            className="mx-auto w-auto h-80"
           />
           <h3 className="mt-0 text-2xl font-medium text-gray-800">Side table</h3>
           <a
             href="/Shop"
-            className="text-lg text-black inline-block relative"
+            className="text-lg text-black inline-block relative mt-4"
           >
             Shop Now
             <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black transform translate-y-2"></span>
@@ -39,7 +38,7 @@ export default function Hero2() {
           <h3 className="mt-0x text-2xl font-medium text-gray-800">Side table</h3>
           <a
             href="/Shop"
-            className="text-lg text-black inline-block relative"
+            className="text-lg text-black inline-block relative mt-4"
           >
             Shop Now
             <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black transform translate-y-2"></span>
