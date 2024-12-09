@@ -143,34 +143,198 @@ export default function SingleProductPage() {
             </button>
           </div>
 
+          <div className="mt-4 flex border-b border-gray-300 pb-2"></div>
+
           {/* Product Metadata */}
-          <div className="mt-16 mb-4">
+          <div className="mt-16">
             <p className="text-md text-gray-600">
-              <span className="font-medium">SKU:</span> SS001
+              <span className="font-medium ">SKU</span>
+              <span className="font-medium p-10"> :</span>
+              SS001
             </p>
             <p className="text-md text-gray-600 mt-4">
-              <span className="font-medium">Category:</span> Sofas
+              <span className="font-medium ">Category</span>
+              <span className="font-medium pr-10 pl-2"> :</span>
+              Sofas
             </p>
             <p className="text-md text-gray-600 mt-4">
-              <span className="font-medium">Tags:</span> Sofa, Chair, Home, Shop
+              <span className="font-medium">Tags</span>
+              <span className="font-medium p-10"> :</span>
+              Sofa, Chair, Home, Shop
             </p>
-            <div className="mt-4 flex items-center space-x-4">
-              <span className="font-medium">Share:</span>
+            <p className="text-md text-gray-600 mt-4 flex items-center">
+              <span className="font-medium ">Share</span>
+              <span className="font-medium pl-8 pr-10"> :</span>
+
+              {/* Social Media Icons */}
               <div className="flex space-x-4">
                 <a href="#" className="text-black hover:text-gray-700">
-                  <FontAwesomeIcon icon={faFacebookF} />
+                  <FontAwesomeIcon icon={faFacebookF} className="text-xl" />
                 </a>
                 <a href="#" className="text-black hover:text-gray-700">
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon icon={faTwitter} className="text-xl" />
                 </a>
                 <a href="#" className="text-black hover:text-gray-700">
-                  <FontAwesomeIcon icon={faLinkedinIn} />
+                  <FontAwesomeIcon icon={faLinkedinIn} className="text-xl" />
                 </a>
-                <button className="text-red-500 hover:text-red-700">
-                  <FontAwesomeIcon icon={faHeart} />
+
+                <button className="text-red-500 hover:text-red-700 pl-40">
+                  <FontAwesomeIcon icon={faHeart} className="text-xl" />
                 </button>
               </div>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-4 flex border-b border-gray-300 pb-2"></div>
+      <div className="bg-white min-h-screen py-16 px-8">
+        {/* Product Description Section */}
+        <div className="max-w-7xl mx-auto ">
+          {/* Tabs for Description, Additional Information, and Reviews */}
+          <div className="flex justify-center mb-8">
+            <div className="flex space-x-8">
+              <button className="text-black text-xl font-medium hover:text-gray-900">
+                Description
+              </button>
+              <button className="text-gray-500 text-xl font-medium hover:text-gray-700">
+                Additional Information
+              </button>
+              <button className="text-gray-500 text-xl font-medium hover:text-gray-700">
+                Reviews [5]
+              </button>
             </div>
+          </div>
+
+          {/* Product Description Text */}
+          <div className="space-y-6">
+            <p className="text-gray-500 text-lg">
+              Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn
+              portable active stereo speaker takes the unmistakable look and
+              sound of Marshall, unplugs the chords, and takes the show on the
+              road.
+            </p>
+            <p className="text-gray-500 text-lg">
+              Weighing in under 7 pounds, the Kilburn is a lightweight piece of
+              vintage styled engineering. Setting the bar as one of the loudest
+              speakers in its class, the Kilburn is a compact, stout-hearted
+              hero with a well-balanced audio which boasts a clear midrange and
+              extended highs for a sound that is both articulate and pronounced.
+              The analogue knobs allow you to fine-tune the controls to your
+              personal preferences while the guitar-influenced leather strap
+              enables easy and stylish travel.
+            </p>
+          </div>
+
+          {/* Images section */}
+          <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-8">
+            {/* Left Image */}
+            <div className="bg-yellow-50 p-6 rounded-lg">
+              <Image
+                src="/images/pdes.png"
+                alt="Asgaard Sofa"
+                width={600}
+                height={400}
+                className="rounded-lg object-cover w-full"
+              />
+            </div>
+
+            {/* Right Image */}
+            <div className="bg-yellow-50 p-6 rounded-lg">
+              <Image
+                src="/images/pdes.png"
+                alt="Asgaard Sofa"
+                width={600}
+                height={400}
+                className="rounded-lg object-cover w-full"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-4 flex border-b border-gray-300 pb-2"></div>
+
+        <div className="bg-white py-12 px-6">
+          {/* Section Heading */}
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-semibold text-gray-800">
+              Related Products
+            </h2>
+          </div>
+          {/* Product Section */}
+          <div className="flex justify-center gap-8 flex-wrap">
+            {/* First Product */}
+            <div className="text-center  p-6 rounded-lg w-64 mb-6">
+              <Image
+                src="/images/tp1.png"
+                alt="Product 1"
+                width={300}
+                height={300}
+                className="mx-auto h-64"
+              />
+              <h3 className="mt-4 text-xl font-semibold text-gray-800">
+                Product 1
+              </h3>
+              <p className="mt-2 text-gray-600">Trenton modular sofa_3</p>
+              <p className="mt-2 text-lg text-gray-500">Rs. 25000.00</p>
+            </div>
+
+            {/* Second Product */}
+            <div className="text-center  p-6 rounded-lg w-64 mb-6">
+              <Image
+                src="/images/tp2.png"
+                alt="Product 2"
+                width={300}
+                height={300}
+                className="mx-auto h-64"
+              />
+              <h3 className="mt-4 text-xl font-semibold text-gray-800">
+                Product 2
+              </h3>
+              <p className="mt-2 text-gray-600">Granite dining table with </p>
+              <p className="mt-2 text-lg text-gray-500">Rs. 25000.00</p>
+            </div>
+
+            {/* Third Product */}
+            <div className="text-center  p-6 rounded-lg w-64 mb-6">
+              <Image
+                src="/images/tp3.png"
+                alt="Product 3"
+                width={300}
+                height={300}
+                className="mx-auto h-64"
+              />
+              <h3 className="mt-4 text-xl font-semibold text-gray-800">
+                Product 3
+              </h3>
+              <p className="mt-2 text-gray-600">Outdoor bar table and stool</p>
+              <p className="mt-2 text-lg text-gray-500">Rs. 25000.00</p>
+            </div>
+
+            {/* Fourth Product */}
+            <div className="text-center  p-6 rounded-lg w-64 mb-6">
+              <Image
+                src="/images/tp4.png"
+                alt="Product 4"
+                width={300}
+                height={300}
+                className="mx-auto h-64"
+              />
+              <h3 className="mt-4 text-xl font-semibold text-gray-800">
+                Product 4
+              </h3>
+              <p className="mt-2 text-gray-600">Plain console with teak</p>
+              <p className="mt-2 text-lg text-gray-500">Rs. 25000.00</p>
+            </div>
+          </div>
+          <div className="text-center lg:tex-center lg:w-full space-y-6 px-32 pb-28">
+            <a
+              href="/Shop"
+              className="text-lg text-black justify-center relative"
+            >
+              View More
+              <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black transform translate-y-2"></span>
+            </a>
           </div>
         </div>
       </div>
