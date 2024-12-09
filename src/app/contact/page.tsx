@@ -152,15 +152,15 @@ export default function Contact() {
             />
           </div>
 
-          <button
-            type="submit"
-            className="w-1/2  px-6 py-3 border border-black rounded-md hover:bg-gray-50 transition-colors duration-200"
-          >
-            Submit
-          </button>
-        </form>
-      </div>
-    </section>
+      <button
+        type="submit"
+        className="px-6 py-3 bg-transparent text-black font-medium border border-black rounded-lg hover:bg-black hover:text-white transition-colors duration-200"
+              >
+        Submit
+      </button>
+              </form>
+            </div>
+      </section>
 
       <div className="bg-[#FAF4F4] py-24">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

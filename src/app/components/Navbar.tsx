@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
         </ul>
 
         {/* Right Icons */}
-        <div className="flex items-center space-x-8">
+        <div className="flex items-center space-x-4 lg:space-x-8">
           <Link href="/MyAccount">
             <button className="text-gray-700 hover:text-white transition-all">
               <BsPersonExclamation size={28} />
@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Hamburger Menu (Mobile) */}
-        <div className="lg:hidden">
+        <div className="lg:hidden ml-4">
           <button
             className="text-gray-700 focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}

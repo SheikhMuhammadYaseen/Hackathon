@@ -175,51 +175,51 @@ export default function SingleProductPage() {
         </div>
       </div>
 
-      {/* Cart Sidebar */}
-      {isCartOpen && (
-        <div className="fixed top-0 right-0 w-96 h-1/2 bg-white shadow-lg z-50 transition-transform duration-300">
-          <div className="p-4 flex justify-between items-center border-b">
-            <h2 className="text-lg font-semibold">Shopping Cart</h2>
-            <button
-              className="text-gray-500 hover:text-gray-700"
-              onClick={toggleCart}
-            >
-              ✕
-            </button>
-          </div>
-          <div className="p-4 space-y-4">
-            <div className="flex items-center space-x-4">
-              <Image
-                src="/images/sofa.png"
-                alt="Cart Item"
-                width={70}
-                height={70}
-                className="rounded-md bg-[#FBEBB5]"
-              />
-              <div className="flex-1 py-5 px-4">
-                <h4 className="text-sm font-medium">Asgaard Sofa</h4>
-                <p className="text-sm text-gray-500">Qty: 1</p>
-                <p className="text-sm text-gray-900">Rs. 250,000.00</p>
+        {/* Cart Sidebar */}
+        {isCartOpen && (
+          <div className="fixed top-0 right-0 w-4/5 sm:w-96 max-h-full bg-white shadow-lg z-50 transition-transform duration-300">
+            <div className="p-4 flex justify-between items-center border-b">
+              <h2 className="text-lg sm:text-xl font-semibold">Shopping Cart</h2>
+              <button
+                className="text-gray-500 hover:text-gray-700 text-xl"
+                onClick={toggleCart}
+              >
+                ✕
+              </button>
+            </div>
+            <div className="p-4 space-y-4 overflow-y-auto">
+              <div className="flex items-center space-x-4">
+                <Image
+                  src="/images/sofa.png"
+                  alt="Cart Item"
+                  width={70}
+                  height={70}
+                  className="rounded-md bg-[#FBEBB5]"
+                />
+                <div className="flex-1">
+                  <h4 className="text-sm font-medium">Asgaard Sofa</h4>
+                  <p className="text-sm text-gray-500">Qty: 1</p>
+                  <p className="text-sm text-gray-900">Rs. 250,000.00</p>
+                </div>
+                <button className="text-red-500 hover:text-red-700 text-lg">✕</button>
               </div>
-              <button className="text-red-500 hover:text-red-700">✕</button>
+            </div>
+
+            <div className="mt-16 justify-between px-6 py-6 flex gap-2 border-b">
+              <p className="text-md text-black">Subtotal</p>
+              <p className="text-md text-yellow-700">Rs. 250,000.00</p>
+            </div>
+
+            <div className="mt-auto flex gap-2 px-4 py-4">
+              <button className="w-1/2 py-1 sm:py-2 border border-black bg-transparent text-black font-medium rounded-full">
+                <a href="/Cart">View Cart</a>
+              </button>
+              <button className="w-1/2 py-1 sm:py-2 border border-black bg-transparent text-black font-medium rounded-full">
+                <a href="/Checkout">Checkout</a>
+              </button>
             </div>
           </div>
-
-          <div className="mt-16 justify-between px-6 py-6 flex gap-2 border-b">
-            <p className="text-md text-black">Subtotal</p>
-            <p className="text-md text-yellow-700">Rs. 250,000.00</p>
-          </div>
-
-          <div className="mt-auto flex gap-2 px-4 py-4">
-            <button className="w-1/2 py-1 border border-black bg-transparent text-black font-medium rounded-full">
-              <a href="/Cart">View Cart</a>
-            </button>
-            <button className="w-1/2 py-1 border border-black bg-transparent text-black font-medium rounded-full">
-              <a href="/Checkout">Checkout</a>
-            </button>
-          </div>
-        </div>
-      )}
+        )}
     </div>
   );
 }

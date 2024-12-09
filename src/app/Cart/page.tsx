@@ -49,7 +49,7 @@ export default function ShopPage() {
         </div>
       </div>
 
-      <main className=" text-black bg-[#ffffff] p-4 md:p-8 mt-36 mb-16">
+      <main className=" text-black bg-[#ffffff] p-4 md:p-8 mt-16 mb-16">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
             {/* Product List Section */}
