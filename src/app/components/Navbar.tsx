@@ -1,16 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faTimes,
-  faUser,
-  faSearch,
-  faHeart,
-  faShoppingCart,
-} from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link"; 
+import { BsPersonExclamation } from "react-icons/bs";
+import { FiSearch } from "react-icons/fi";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { IoCartOutline } from "react-icons/io5";
+import { RxHamburgerMenu } from "react-icons/rx";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +14,7 @@ const Navbar: React.FC = () => {
     { name: "Home", href: "/" },
     { name: "Shop", href: "/Shop" },
     { name: "Blog", href: "/Blog" },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact", href: "/Contact" },
   ];
 
   return (
@@ -30,7 +26,7 @@ const Navbar: React.FC = () => {
             <li key={index}>
               <Link
                 href={item.href}
-                className="text-gray-700 hover:text-white transition-all"
+                className="text-gray-700 hover:text-white font-semibold transition-all"
               >
                 {item.name}
               </Link>
@@ -39,26 +35,22 @@ const Navbar: React.FC = () => {
         </ul>
 
         {/* Right Icons */}
-        <div className="flex items-center space-x-8 ">
-        <Link href="/MyAccount">
-      <button className="text-gray-700 hover:text-white transition-all">
-        <FontAwesomeIcon icon={faUser} size="lg" />
-      </button>
-    </Link>
-    
+        <div className="flex items-center space-x-8">
+          <Link href="/MyAccount">
+            <button className="text-gray-700 hover:text-white transition-all">
+              <BsPersonExclamation size={28} />
+            </button>
+          </Link>
           <button className="text-gray-700 hover:text-white transition-all">
-            <FontAwesomeIcon icon={faSearch} size="lg" />
+            <FiSearch size={28} />
           </button>
           <button className="text-gray-700 hover:text-white transition-all">
-            <FontAwesomeIcon icon={faHeart} size="lg" />
+            <IoMdHeartEmpty size={28} />
           </button>
           <Link href="/Cart">
-          <button className="text-gray-700 hover:text-white transition-all relative">
-            <FontAwesomeIcon icon={faShoppingCart} size="lg" />
-            <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-              1
-            </span>
-          </button>
+            <button className="text-gray-700 hover:text-white transition-all relative">
+              <IoCartOutline size={28} />
+            </button>
           </Link>
         </div>
 
@@ -68,7 +60,7 @@ const Navbar: React.FC = () => {
             className="text-gray-700 focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
           >
-            <FontAwesomeIcon icon={menuOpen ? faTimes : faBars} size="lg" />
+            <RxHamburgerMenu size={28} />
           </button>
         </div>
       </div>
@@ -76,19 +68,18 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="lg:hidden">
-          <ul className="flex flex-col items-center space-y-4 py-4 px-6">
+          <ul className="flex flex-col items-center space-y-3 mt-4 bg-white p-4 rounded shadow">
             {menuItems.map((item, index) => (
               <li key={index}>
                 <Link
                   href={item.href}
-                  className="text-gray-700 hover:text-red-500 transition-all"
+                  className="text-gray-700 font-semibold text-lg"
                 >
                   {item.name}
                 </Link>
               </li>
             ))}
           </ul>
-          
         </div>
       )}
     </nav>

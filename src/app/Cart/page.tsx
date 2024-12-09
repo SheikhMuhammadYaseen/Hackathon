@@ -79,7 +79,7 @@ export default function ShopPage() {
                         <div className="flex items-center gap-4">
                           <div className="h-20 w-20 flex-shrink-0 overflow-hidden rounded-lg bg-yellow-100">
                             <img
-                              src="/images/Asgaard sofa 1.png"
+                              src="/images/sofa.png"
                               alt="Asgaard sofa"
                               className="h-full w-full object-cover object-center"
                             />

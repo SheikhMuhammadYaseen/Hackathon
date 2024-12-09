@@ -10,7 +10,7 @@ export default function Hero2() {
         {/* First Side Table */}
         <div className="text-left">
           <Image
-            src="/images/Granite square.png" 
+            src="/images/table.png" 
             alt="Side Table"
             width={400}
             height={400}
@@ -29,7 +29,7 @@ export default function Hero2() {
         {/* Second Side Table (Couch) */}
         <div className="text-left">
           <Image
-            src="/images/Cloud sofa.png"
+            src="/images/cloudsofa.png"
             alt="Side Table"
             width={400}
             height={400}

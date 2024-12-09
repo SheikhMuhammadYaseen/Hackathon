@@ -192,7 +192,7 @@ export default function Blog() {
               <div className="space-y-4">
                 <a className="flex gap-4 hover:bg-gray-50">
                   <img
-                    src="/images/blg5 (1).png"
+                    src="/images/blogs1.png"
                     alt="Laptop and notepad"
                     className="w-[60px] h-[60px] object-cover rounded"
                   />
@@ -206,7 +206,7 @@ export default function Blog() {
 
                 <a className="flex gap-4 hover:bg-gray-50">
                   <img
-                    src="/images/blg5 (2).png"
+                    src="/images/blogs2.png"
                     alt="Person writing"
                     className="w-[60px] h-[60px] object-cover rounded"
                   />
@@ -220,7 +220,7 @@ export default function Blog() {
 
                 <a className="flex gap-4 hover:bg-gray-50">
                   <img
-                    src="/images/blg5 (3).png"
+                    src="/images/blogs3.png"
                     alt="Modern office"
                     className="w-[60px] h-[60px] object-cover rounded"
                   />
@@ -232,7 +232,7 @@ export default function Blog() {
 
                 <a className="flex gap-4 hover:bg-gray-50">
                   <img
-                    src="/images/blg5 (5).png"
+                    src="/images/blogs4.png"
                     alt="Coffee and laptop"
                     className="w-[60px] h-[60px] object-cover rounded"
                   />
@@ -244,7 +244,7 @@ export default function Blog() {
 
                 <a className="flex gap-4 hover:bg-gray-50">
                   <img
-                    src="/images/blg5 (4).png"
+                    src="/images/blogs5.png"
                     alt="Coffee and laptop"
                     className="w-[60px] h-[60px] object-cover rounded"
                   />

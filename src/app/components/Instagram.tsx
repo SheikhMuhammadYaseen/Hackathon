@@ -18,7 +18,7 @@ export default function InstagramSection() {
             className="w-full h-full bg-cover bg-center "
             style={{ backgroundImage: "url('/images/rec.png')" }}  
           ></div>
-         
+          
         </div>
       </section>
     );

@@ -24,7 +24,7 @@ const HeroSection: React.FC = () => {
         {/* Right Side Image */}
         <div className="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
           <img
-            src="/images/Rocket single seater 1.png"
+            src="/images/seater.png"
             alt="Rocket Single Seater"
             className="w-3/4 sm:w-2/3 lg:w-full max-w-xs sm:max-w-md lg:max-w-lg object-cover"
           />
